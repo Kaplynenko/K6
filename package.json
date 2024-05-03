@@ -1,0 +1,14 @@
+{
+  "name": "strax-qa-k6",
+  "version": "1.0.0",
+  "description": "Performance tests for Strax project",
+  "main": "cad.tests.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
