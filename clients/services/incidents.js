@@ -16,11 +16,4 @@ export class Incidents extends HttpClient {
   createIncident(incidentData) {
     return this.post(getUrl.getIncidents, incidentData);
   }
-  //   archiveCallsign(id) {
-  //     const payload = { isArchive: true };
-  //     return this.put(`${getUrl.getCallsign}${id}/archive`, payload);
-  //   }
-  //   deleteById(id) {
-  //     return this.delete(`${getUrl.getCallsign}${id}`);
-  //   }
 }

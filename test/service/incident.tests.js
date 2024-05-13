@@ -48,26 +48,4 @@ export default function (token) {
     });
     sleep(5);
   });
-
-  //   group("PUT callsign should archive", function () {
-  //     const callsignName = `K6-${Date.now()}`;
-  //     const newCallsignObj = callsignApi.createCallSign(callsignName);
-  //     const callsignById = callsignApi.archiveCallsign(newCallsignObj._id);
-  //     check(callsignById, {
-  //       "is not empty": (r) => callsignById.length !== 0,
-  //       "callsing should archive": (r) => r.isArchive === true,
-  //     });
-
-  //     sleep(5);
-  //   });
-  //   group("DELETE callsign By Id", function () {
-  //     const callsignName = `K6-${Date.now()}`;
-  //     const newCallsignObj = callsignApi.createCallSign(callsignName);
-  //     const callsignById = callsignApi.deleteById(newCallsignObj._id);
-  //     check(callsignById, {
-  //       "is empty": (r) => !callsignById.length,
-  //     });
-
-  //     sleep(5);
-  //   });
 }
