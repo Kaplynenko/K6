@@ -3,6 +3,7 @@ export const getUrl = {
   getCads: "/api/ier/cad",
   cadIntegrations: "/api/integrations/cad",
   getCallsign: "/api/callsigns/",
+  getIncidents: "/api/events/",
 };
 export const permCategories = [
   {
