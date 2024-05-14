@@ -48,4 +48,16 @@ export default function (token) {
     });
     sleep(5);
   });
+  group("DELETE Incident by id", function () {
+    const incident = `Incident_k6-${Date.now()}`;
+    const createdIncident = IncidentsApi.createIncident({
+      incident,
+    });
+    const deletedIncident = IncidentsApi.deleteById(createdIncident._id);
+    console.log("TTTTTT", deletedIncident);
+    check(deletedIncident, {
+      "is empty": (r) => !deletedIncident.length,
+    });
+    sleep(5);
+  });
 }

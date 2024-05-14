@@ -16,4 +16,12 @@ export class Incidents extends HttpClient {
   createIncident(incidentData) {
     return this.post(getUrl.getIncidents, incidentData);
   }
+  end(eventId) {
+    return this.put(`${getUrl.getIncidents}${eventId}/end`);
+  }
+  deleteById(id) {
+    const res = this.end(id);
+    console.log("YYYYYY", res);
+    return this.delete(`${getUrl.getPlaybacks}${id}`);
+  }
 }

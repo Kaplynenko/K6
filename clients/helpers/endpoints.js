@@ -4,6 +4,9 @@ export const getUrl = {
   cadIntegrations: "/api/integrations/cad",
   getCallsign: "/api/callsigns/",
   getIncidents: "/api/events/",
+  getPlaybacks: "/api/utility/playbacks/",
+  getNotes: "/api/mq/messages/",
+  logOut: "/api/id/logout",
 };
 export const permCategories = [
   {
